@@ -6,4 +6,4 @@ iOS 앱 [귀기울임](https://apps.apple.com)의 개인정보처리방침과 �
 개인정보처리방침 본문은 앱 소스를 유일한 출처로 삼아 생성됩니다.
 직접 고치지 말고 앱 저장소의 `scripts/gen-privacy-page.py`를 다시 돌려 주세요.
 
-문의: listenawhile.app@gmail.com
+문의: listenawhile@anotier.art
