@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>귀기울임 · Listen Awhile · 耳澄まし</title>
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="./img/favicon.png">
+<link rel="stylesheet" href="./style.css">
+<style>
+  .go { min-height: 100vh; display: grid; place-content: center; text-align: center; gap: 8px; }
+  .go img { width: 72px; height: 72px; border-radius: 17px; border: 1px solid var(--line); margin: 0 auto 18px; }
+  .go .cta { justify-content: center; margin-top: 22px; }
+  .go p { margin: 0; }
+</style>
+<script>
+  // QR 하나로 기기에 맞는 스토어로 보낸다. iPad는 맥으로 보고하는 경우가 있어 터치 여부로 가린다.
+  (function () {
+    if (location.search.indexOf('stay') !== -1) return;
+    var ua = navigator.userAgent;
+    var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (ios) location.replace('https://apps.apple.com/app/id6808590966');
+    else if (/Android/.test(ua)) location.replace('https://play.google.com/store/apps/details?id=com.mingkoo.gwigiulim');
+  })();
+</script>
+</head>
+<body>
+<div class="go">
+  <div>
+    <img src="./img/icon-192.png" alt="" width="72" height="72">
+    <h1>귀기울임 · Listen Awhile</h1>
+    <p class="lead">하루에 한 번, 주변의 소리에 귀를 기울이는 시간.</p>
+    <div class="cta">
+      <a class="btn" href="https://apps.apple.com/app/id6808590966"><small>iPhone</small><strong>App Store</strong></a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.mingkoo.gwigiulim"><small>Android</small><strong>Google Play</strong></a>
+    </div>
+    <p class="cta-note" style="margin-top:28px"><a href="./index.html">한국어</a> · <a href="./index.en.html">English</a> · <a href="./index.ja.html">日本語</a></p>
+  </div>
+</div>
+</body>
+</html>
